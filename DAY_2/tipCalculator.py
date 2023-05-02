@@ -6,5 +6,7 @@ tipPercent = int(input("What Percentage tip would you like to give? 10, 12, or 1
 tip = (totalBill*tipPercent)/(100)
 totalBill = totalBill + tip
 billOfEachPerson = round(totalBill/peopleNumber,2)
-print(f"Each person should pay: {billOfEachPerson}")
+#For Saving an End 2 decimal number format we need to do in the next line
+billOfEachPerson = "{:.2f}".format(billOfEachPerson)
+print(f"Each person should pay: ${billOfEachPerson}")
 
